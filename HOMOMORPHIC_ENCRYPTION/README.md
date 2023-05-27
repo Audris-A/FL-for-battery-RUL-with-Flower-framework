@@ -1,11 +1,10 @@
-Activate the environemnt "he_environment" because it contains
-direct changes in the Flower library!!!
+This method requires changes to the flower lib.
 
-The changes made include adapting the conversion functions ndarrays_to_parameters
+The changes to be made include adapting the conversion functions ndarrays_to_parameters
 and parameters_to_ndarrays.
 
-If the package somehow is reinstalled and the changes are lost, see the necessary code below:
-  The path to file is (...)/flwr/common/parameter.py
+The path to file is (...)/flwr/common/parameter.py
+
 ============================
 from logging import WARNING, INFO
 from flwr.common.logger import log
