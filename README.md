@@ -11,7 +11,7 @@ be found here https://www.nasa.gov/content/prognostics-center-of-excellence-data
 There are four configurations:
 - Baseline FL with no privacy and security methods;
 - DP FL with differential privacy (built into Flower);
-- HE FL with secure aggregation using homomorphic encryption from Pyfhel lib;
+- HE FL with secure aggregation using homomorphic encryption from Pyfhel lib ( https://pyfhel.readthedocs.io/en/latest/ );
 - DP HE FL the combination of the previous two;
 
 The HE methods require changes in the (...)/flwr/common/parameter.py file.
