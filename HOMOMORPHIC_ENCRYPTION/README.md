@@ -5,7 +5,7 @@ and parameters_to_ndarrays.
 
 The path to file is (...)/flwr/common/parameter.py
 
-============================
+```
 from logging import WARNING, INFO
 from flwr.common.logger import log
 
@@ -20,4 +20,4 @@ def parameters_to_ndarrays(parameters: Parameters) -> NDArrays:
 
     #return [bytes_to_ndarray(tensor) for tensor in parameters.tensors]
     return [tensor for tensor in parameters.tensors]
-======================================
+```
