@@ -277,7 +277,7 @@ class CustomFedAvg(Strategy):
         for k in range(1, len(client_results_in_cyphertext)):
             cypher_sum_result += client_results_in_cyphertext[k]
 
-        cypher_sum_result *= 0.5
+        cypher_sum_result *= np.float32(1/len(client_results_in_cyphertext))
 
         avg_cypher_byte_list = []
         for end_cypher in cypher_sum_result:
